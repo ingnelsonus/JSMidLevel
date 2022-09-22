@@ -118,5 +118,103 @@
   //  console.log(event.target);
 //});
 
+////Event flow
+//Event Bubbling vs Event Capturing
+//EventstopPropagation()
+
+//const button=document.querySelector(".button");
+//const contenedor = document.querySelector(".contenedor");
+
+//button.addEventListener("click",saludar=(event)=>{
+    //alert("di click en el boton");
+    //event.stopPropagation();
+//});
+
+//Ejecutar por default el contenedor mas grande.
+//contenedor.addEventListener("click",saludar=(event)=>{
+//    alert("di click en el contenedor");
+//},true);
+
+//contenedor.addEventListener("click",saludar=(event)=>{
+    //alert("di click en el contenedor");
+//});
 
 
+//************************************Muse Events********************************************/////
+//const button=document.querySelector(".button");
+
+////DoubleClick: dblclick
+//button.addEventListener("dblclick",saludar=(event)=>{
+  //alert("di click en el boton");
+  //event.stopPropagation();
+//});
+
+////mouseover
+//button.addEventListener("mouseover",saludar=(event)=>{
+    //alert("mouse over button");    
+  //});
+
+  ////mouseout
+  //button.addEventListener("mouseout",saludar=(event)=>{
+    //alert("mouse out button");    
+  //});
+
+////contextmenu: ocurre con un click derecho en un elemento para abrir un menú
+//button.addEventListener("contextmenu",saludar=(event)=>{
+    //alert("context menu event");    
+//});
+
+////mouseenter: ocurre cuando el puntero se mueve sobre un elemento.
+////mouseleave: ocurre cuando un puntero se mueve fuera de un elemento.
+////mouseuo: ocurre cuando un usuario suelta un boton del mouse sobre un elemento.
+////mousemove: ocurre cuando el puntero se mueve mientras esta sobre un elemento.
+////mousedown: ocurre cuando el boton del mouse es presionado sobre un elemento.
+    
+
+//************************************Key Events************************************/////
+//let inputprueba = document.querySelector(".input-prueba");
+
+////keydown: ocurre cuando una tecla se deja de precionar.
+//inputprueba.addEventListener("keydown",(event)=>{
+  //  alert("una tecla fue presionada");
+//});
+
+
+////keypress: ocurre cuando una tecla se preciona y suelta
+//inputprueba.addEventListener("keypress",(event)=>{
+  //  alert("Un usuario presionando una tecla");
+//})
+
+////onkeyup: ocurre despues de que los dos eventos anteriores hayan concluido consecutivamente.
+//inputprueba.addEventListener("onkeyup",(event)=>{
+  //  alert("una tecla fue liberada");
+//});
+
+
+//************************************eventos de la interfaz************************************/////
+//const img = document.querySelector(".img-prueba");
+
+////error: ocurre cuando sucede un error durante la carga de un archivo multimedia.
+//img.addEventListener("error",(event)=>{
+  //alert("ha sucedido un error");
+//});
+
+////load: ocurre cuando un objeto se ha cargado
+//window.addEventListener("load",(event)=>{
+  // alert("ha cargado el sitio");
+//});
+
+////beforeunload: ocurre justo antes de que el documento se carge (antes de irte del sitio)
+////unload: ocurre una vez que se ha descargado una pagina (te fuiste del sitio)
+////resize: ocurre cuando se cambia el tamaño la vista del documento
+////scroll: ocurre cuando se desplaza la barra de desplazamiento de un elemento.
+//window.addEventListener("scroll",(event)=>{
+  // console.log("se ha scrolleado ");
+//});
+
+////select: ocurre después de que el usuario selecciona agun texto de <input> o <textarea>
+const inputprueba = document.querySelector(".input-prueba");
+
+inputprueba.addEventListener("select",(event)=>{
+    console.log(event);
+});
