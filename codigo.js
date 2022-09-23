@@ -213,8 +213,82 @@
 //});
 
 ////select: ocurre después de que el usuario selecciona agun texto de <input> o <textarea>
-const inputprueba = document.querySelector(".input-prueba");
+//const inputprueba = document.querySelector(".input-prueba");
 
-inputprueba.addEventListener("select",(event)=>{
-    console.log(event);
-});
+//inputprueba.addEventListener("select",(event)=>{
+  //  console.log(event);
+//});
+
+////Mas eventos en: https://www-weschools.com/jsref/obj_events.asp
+
+
+//************************************Timers************************************/////
+////setTimeout()
+//const temporizador =setTimeout(()=>{
+//document.write("Hola...");
+//},2000);
+
+//clearTimeout(temporizador);
+
+////setInterval()
+//clearInterval(xxxx);
+
+////clearTimeout()
+////clearInterval()
+
+
+//************************************Exepciones y tipos de excepciones************************************/////
+
+
+//************************************CallBacks************************************/////
+//function prueba(callback){
+  //callback("Pedro");
+//}
+
+//function decirNombre(nombre)
+//{
+  //console.log(nombre);
+//}
+
+//prueba(decirNombre);
+
+//class Persona{
+  //constructor(nombre,instagram){
+  //this.nombre = nombre;
+  //this.instagram=instagram;
+//}
+//};
+
+
+//const protpersonas =[
+  //["Nelsn","@faneus"],
+  //["Diana","@chalarca"],
+  //["Pepito","@pepito"]
+//];
+
+//const personas =[];
+
+
+//for (let i = 0; i < protpersonas.length; i++) {
+  //personas[i] = new Persona(protpersonas[i][0],protpersonas[i][1]);  
+//}
+
+//console.log(personas);
+
+//************************************Promesas************************************/////
+//let nombre ="pedro";
+//const promesa = new Promise((resolve,reject)=>{
+  //if(nombre != "pedro") reject("Lo siento, el nombre no es pedro");
+  //else resolve(nombre)
+//});
+
+//console.log(promesa);
+
+
+//************************************Await & async************************************/////
+//************************************Ajax - Nativa************************************/////
+
+
+
+
+//************************************CallBacks************************************/////

@@ -1,0 +1,58 @@
+body{
+    color: #333;
+    font-family: sans-serif;    
+}
+
+input{
+    display: block;
+    width:90%;
+    padding: 6px;
+    margin: 12px auto;
+    box-sizing: border-box;
+    border: none;    
+    border-top: 2px solid #48e;
+    background: transparent;
+    outline: none !important;
+    transition: backgroud 0.3s;
+}
+
+input::placeholder{
+    color: #48e;
+    transition: color 0.3s;
+    
+}
+
+input:hover{
+    background: #26a;
+}
+
+input:hover::-moz-placeholder{
+    color: white;
+}
+
+input[type="submit"]{
+width: 50%;
+margin-top: 18px;
+padding: 12px;
+background: #26a;
+color: white;
+}
+
+input[type="submit"]:hover{
+    background: #048;
+}
+
+form{
+    width: 86%;
+    margin: auto;
+    background: black;
+    padding: 30px;
+}
+
+.green{
+    color: #9c9;
+}
+
+.red{
+    color:#c99 ;
+}
